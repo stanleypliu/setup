@@ -21,14 +21,11 @@ sudo apt install -y git
 
 ## Sublime Text 3 - Your text editor
 
-A text editor is one of the most important tools of a developer.
-Follow these instructions in the Terminal:
 
 ```bash
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 ```
 
-:point_up: This command will ask for your password with: `[sudo] password for <username>:`. Don't panick! Calmy type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
 
 ```bash
 sudo apt install -y apt-transport-https
@@ -267,30 +264,6 @@ You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 ## Installing some gems
 
----
-
-<details>
-  <summary>Click here if you are in :cn: <bold>China</bold></summary>
-
-
-  &nbsp;
-
-  :warning: If you are in China, you should update the way we'll install gem with the following commands.
-
-```bash
-# China only!
-gem sources --remove https://rubygems.org/
-gem sources -a https://gems.ruby-china.com/
-gem sources -l
-# *** CURRENT SOURCES ***
-# https://gems.ruby-china.com/
-# Ruby-china.com must be in the list now
-```
-</details>
-
----
-
-All, please run the following line:
 
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored http
@@ -340,13 +313,10 @@ When the command returns, run
 node -v
 ```
 
-You should see `v14.15.0`. If not, ask a teacher.
 
 
 ## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
-an open-source robust and production-ready database. Let's install it now.
 
 ```
 sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
