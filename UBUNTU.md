@@ -260,7 +260,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
+You should see something starting with `ruby 2.6.6p`.
 
 ## Installing some gems
 
@@ -299,7 +299,7 @@ Restart your terminal and run the following:
 ```bash
 nvm -v
 ```
-You should see a version. If not, ask a teacher.
+You should see a version. 
 
 Now let's install node:
 
