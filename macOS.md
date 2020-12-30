@@ -9,36 +9,6 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Install Ruby
 
 
-## Remote tools
-
-To be able to interact when we are not in the same physical room, we will be using two tools:
-
-### Zoom
-
-Zoom is a video conferencing tool. To create an account and install the app, go to [https://zoom.us/download](https://zoom.us/download) and under **Zoom Client for Meetings** click the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connection** and create an account with the **Sign Up Free** option:
-
-![zoom-sign-up-free.png](images/zoom-sign-up-free.png)
-
-Once connected, you should see:
-
-![zoom-welcome-screen.png](images/zoom-welcome-screen.png)
-
-You can close Zoom now.
-
-### Teamviewer
-
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer** and open the file you just have downloaded. Leave the default settings as they are and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
-
-![teamviewer.jpg](images/teamviewer.jpg)
-
-This will only be used as last resort when debugging becomes too tricky through spoken word. Nobody will ever be able to take control of your screen without you knowing it :ok_hand:
-
-You can close Teamviewer now.
-
-If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) full of good practices :camera: :microphone:
-
-
-
 ## A note about quitting apps on a Mac
 
 Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
@@ -90,14 +60,6 @@ xcode-select --install
 ```
 
 Then follow the previous instructions for this command.
-
-
-## GitHub account
-
-Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
-
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
-
 
 ## Homebrew
 
@@ -173,8 +135,6 @@ You should see something like this:
 
 ![](images/on-my-zsh.png)
 
-If not, **stop right away** and call a teacher.
-
 On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
 
 ![](images/terminal-pro.png)
@@ -237,7 +197,7 @@ This is the expected result:
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: If you got this message, the keys were added successfully!
 
-&nbsp;&nbsp;&nbsp; :x: If you encountered an error, you will have to try again. Do not hesitate to *contact a teacher*.
+&nbsp;&nbsp;&nbsp; :x: If you encountered an error, you will have to try again. 
 
 
 ---
@@ -479,7 +439,7 @@ Restart your terminal and run the following:
 ```bash
 nvm -v
 ```
-You should see a version. If not, ask a teacher.
+You should see a version. 
 
 Now let's install node:
 
@@ -497,9 +457,6 @@ You should see `v14.15.0`. If not, ask a teacher.
 
 
 ## PostgreSQL
-
-In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
-an open-source robust and production-ready database. Let's install it now.
 
 ```bash
 brew install postgresql
@@ -524,61 +481,7 @@ postgres=#
 To quit it, type `\q` then `Enter`.
 
 
-## Security
-
-It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups` and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
-
-You can also go to ` > System Preferences > Mission Control` and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
-
-
-## Check-up
-
-Let's check if you successfully installed everything.
-
-Quit all opened Terminal, open a new one and run the following commands:
-
-```bash
-curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb || rm _.rb
-```
-
-It should tell you if your workstation is ready :) If not, ask a teacher.
-
-
-## Alumni
-:warning: If you have received an email from Le Wagon inviting you to sign up on Kitt (our learning platform), you can safely skip this step. Instead, please follow the instructions in the email you received if you haven't done so already.
-If you are unsure about what to do, you can follow [this link](https://kitt.lewagon.com/). If you are already logged in, you can safely skip this section. If you are not logged in, click on `Enter Kitt as a Student`. If you manage to login, you can safely skip this step. Otherwise ask a teacher whether you should have received an email or follow the instructions below.
-
-Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
-
-Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
-
-Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
-
-- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
-- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
-
-
-## Slack
-
-[Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store and sign in to `lewagon-alumni` organization.
-
-Make sure you upload a picture there.
-
-You can also sign in to Slack on your iPhone or Android device!
-
-The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
-
-In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
-
-After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
-![](images/slack_mic_cam_all_green.png)
-
-
 ## Keyboard
-
-As you become a programmer, you'll understand that leaving the keyboard takes a lot of time,
-so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on OSX
-to help you do that:
 
 ### Keyboard speed
 
